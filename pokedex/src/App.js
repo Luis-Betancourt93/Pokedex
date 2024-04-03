@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
-import PokemonList from './PokemonList'
+
 
 function App() {
-  const [pokemon, setPokemon] = useState(["bulbasaur", "charmander"])
   
+  const API_BASE = 'https://pokeapi.co/api/v2/pokemon'
+  
+  const [pokemonData, setPokemonData] = useState(null)
+  const [searchedPokemon, setSearchedPokemon] = useState('')
+  const [error, setError] = useState(null)
+
   return (
-    <PokemonList pokemon = {pokemon} />
+    <div>
+
+    </div>
+   
+
   );
 }
 
