@@ -9,6 +9,16 @@ function App() {
   const [searchedPokemon, setSearchedPokemon] = useState('')
   const [error, setError] = useState(null)
 
+  const fetchPokemon = async (e) => {
+    e.preventDefault()
+    try {
+      const fetchData = await fetch(API_BASE + searchedPokemon)
+
+    } catch (err) {
+      
+    }
+  }
+
   return (
     <div>
 
