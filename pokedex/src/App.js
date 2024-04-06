@@ -13,15 +13,25 @@ function App() {
     e.preventDefault()
     try {
       const fetchData = await fetch(API_BASE + searchedPokemon)
+      const json = await fetchData.json()
+      setPokemonData(json)
+
 
     } catch (err) {
+
       
+
     }
   }
 
   return (
     <div>
-
+      <form onSubmit={fetchPokemon}>
+        <input type='text'
+        
+        />
+        <input type = 'submit'/>
+      </form>
     </div>
    
 
