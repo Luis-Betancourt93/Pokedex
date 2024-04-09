@@ -15,7 +15,7 @@ const App = () => {
     try {
       const fetchData = await fetch(API_BASE + searchedPokemon.toLocaleLowerCase())
       const json = await fetchData.json()
-      
+      setError(null)
       setPokemonData(json)
       
 
