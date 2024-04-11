@@ -26,7 +26,13 @@ const App = () => {
   }
 
   return (
+
+    
+ 
+   
     <div>
+    <h1 className="text-3xl text-blue-800 font-bold underline"> Hello World! </h1>
+
       <form onSubmit={fetchPokemon}>
         <input type='text'
         value={searchedPokemon}
@@ -40,8 +46,11 @@ const App = () => {
       </div>
     </div>
    
+   
 
   );
+
+ 
 }
 
 export default App;
