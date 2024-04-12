@@ -17,7 +17,7 @@ const App = () => {
       const json = await fetchData.json()
       setError(null)
       setPokemonData(json)
-      
+      setSearchedPokemon('')
 
     } catch (err) {
       console.log(err)
@@ -26,12 +26,9 @@ const App = () => {
   }
 
   return (
-
+  
+    <div className='h-screen w-screen bg-blue-500 '>
     
- 
-   
-    <div>
-    <h1 className="text-3xl text-blue-800 font-bold underline"> Hello World! </h1>
 
       <form onSubmit={fetchPokemon}>
         <input type='text'
@@ -40,7 +37,9 @@ const App = () => {
         />
         <input type = 'submit'/>
       </form>
-
+      <div className='flex justify-center items-center'>
+      <img src='images/pokedex.png' className='max-w-full max-h-full'/>
+      </div>
       <div>
         {error ? <div> {error}</div>: <Pokemon pokemon = {pokemonData} />}
       </div>
