@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import Pokemon from './Pokemon'
+import ImageWithTextOverlay from './ImageOverlay'
 
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
 
   return (
   
-    <div className='h-screen w-screen bg-blue-500 '>
+    <div className='h-screen w-screen bg-gray-400 '>
     
 
     <form onSubmit={fetchPokemon} class="max-w-md mx-auto">   
@@ -46,7 +47,8 @@ const App = () => {
       
 
       <div className='flex justify-center items-center'>
-        <img src='images/pokedex.png' className='max-w-full max-h-full'/>
+        <ImageWithTextOverlay></ImageWithTextOverlay>
+        {/* <img src='images/pokedex.png' className='max-w-full max-h-full'/> */}
       </div>
 
       <div>
