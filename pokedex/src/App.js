@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Pokemon from './Pokemon'
 import ImageWithTextOverlay from './ImageOverlay'
+import Textbox from './textBox'
 
 
 const App = () => {
@@ -47,8 +48,14 @@ const App = () => {
       
 
       <div className='flex justify-center items-center'>
+        <div className='justify-items-end'>
         <ImageWithTextOverlay></ImageWithTextOverlay>
-        {/* <img src='images/pokedex.png' className='max-w-full max-h-full'/> */}
+        </div>
+        
+        <div>
+          <Textbox></Textbox>
+        </div>
+        
       </div>
 
       <div>
@@ -67,3 +74,10 @@ export default App;
 
 
 
+
+
+
+
+
+// This just the image of the pokedex without the overlay (Just in case)
+{/* <img src='images/pokedex.png' className='max-w-full max-h-full'/> */}

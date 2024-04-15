@@ -1,14 +1,14 @@
 import React from 'react';
 
-const ImageWithTextOverlay = () => {
+const Textbox = () => {
   return (
     <div className="relative">
       <img
-        src="images/pokedex1.png"
+        src="images/textBox1.png"
         alt="Image the the pokedex"
         className="object-cover w-full h-full"
       />
-      <div className="absolute top-60 left-56 pr-6 ml-24 mt-2.5  h-40  text-white text-lg font-bold bg-green-800  p-4">
+      <div className="absolute top-14 left-96  text-white text-lg font-bold bg-black bg-opacity-50 p-4">
         Text overlay content
       </div>
     </div>
@@ -17,4 +17,4 @@ const ImageWithTextOverlay = () => {
   )
 };
 
-export default ImageWithTextOverlay;
+export default Textbox;
