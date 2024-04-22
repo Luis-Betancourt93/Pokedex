@@ -3,9 +3,15 @@ module.exports = {
   content: ["./src/*.js",],
   theme: {
     extend: {
-      width: {
-        'left-54': '216px'
-      }
+      height: {
+        '30': '7.5rem',
+        '38': '9.5rem',
+        '100' : '32rem',
+      
+      },
+      padding: {
+        '8': '8rem',
+      },
     },
   },
   plugins: [],

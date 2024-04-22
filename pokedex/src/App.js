@@ -47,16 +47,16 @@ const App = () => {
 
       
 
-      <div className='flex justify-center items-center'>
-        <div className='justify-items-end'>
+      
+        <div className=' '> 
         <ImageWithTextOverlay></ImageWithTextOverlay>
         </div>
         
-        <div>
+        <div className=''>
           <Textbox></Textbox>
         </div>
         
-      </div>
+    
 
       <div>
         {error ? <div> {error}</div>: <Pokemon pokemon = {pokemonData} />}
