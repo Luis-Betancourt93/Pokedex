@@ -44,6 +44,7 @@ const App = () => {
         </form>
 
         <div className=' '> 
+        
         <ImageWithTextOverlay pokemon = {pokemonData}/>
         </div>
         

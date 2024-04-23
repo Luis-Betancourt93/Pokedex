@@ -10,7 +10,7 @@ const Pokemon = ({pokemon}) => {
   return (
     <div>
       <div>{name}</div>
-      <img src={image} alt='Pokemon' />
+     
       <div>{typesString}</div>
     </div>
     
