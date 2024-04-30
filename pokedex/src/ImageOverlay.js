@@ -3,13 +3,14 @@ import React from 'react';
 
 
 const ImageWithTextOverlay = ({pokemon}) => {
-
-  // Starting to tingger
   
   const types = pokemon && pokemon.types ? pokemon.types.map(el => el.type.name) : [];
   const image = pokemon ? pokemon.sprites.front_default : '';
+
+  // default background color
   let backgroundColorClass = 'bg-black'
 
+  // diffrent color depending on pokemon 'types'
   const backgroundColors = {
     normal: 'bg-normal',
     fire: 'bg-fire',
@@ -31,6 +32,7 @@ const ImageWithTextOverlay = ({pokemon}) => {
 
   }
   
+  // checking if 'types' is equal to one of the types listed in backgroundColors. 
   for (const type of types) {
     if (type in backgroundColors) {
       backgroundColorClass = backgroundColors[type]
@@ -38,7 +40,6 @@ const ImageWithTextOverlay = ({pokemon}) => {
     }
   }
 
-  
 
   return (
 
