@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Textbox = ({pokemon}) => {
+const Textbox = ({pokemon, englishDescription}) => {
 
   
   const pokeName = pokemon && pokemon.name ? pokemon.name: '';
@@ -17,7 +17,7 @@ const Textbox = ({pokemon}) => {
         <div className='flex justify-center underline font-extrabold tracking-widest'> {upperCaseName}</div>
         <div className='flex '>
           <div className='w-1/2 bg-red-400  h-44 rounded-lg flex justify-center'>
-            <h1 className=' '>Description</h1> 
+            <h1 className=' '>{englishDescription}</h1> 
           </div>
           <div className='w-1/2 bg-green-500 flex justify-center h-44 rounded-lg'>
            Stats

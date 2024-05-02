@@ -11,7 +11,9 @@ const App = () => {
   const [pokemonData, setPokemonData] = useState(null)
   const [searchedPokemon, setSearchedPokemon] = useState('')
   const [error, setError] = useState(null)
-  
+  const [englishDescription, setEnglishDescription] = useState('');
+
+
   const fetchPokemon = async (e) => {
     e.preventDefault()
     try {
@@ -19,12 +21,29 @@ const App = () => {
       const json = await fetchData.json()
       setError(null)
       setPokemonData(json)
+
+       // Fetch species data
+       const speciesResponse = await fetch(json.species.url);
+       const speciesData = await speciesResponse.json();
+       const flavorTextEntries = speciesData.flavor_text_entries;
+       
+      //  Getting the decription on English
+       const description = flavorTextEntries.find(entry => entry.language.name === 'en');
+       if (description) {
+        setEnglishDescription(description.flavor_text);
+      } else {
+        setEnglishDescription('No description available');
+      }
+
+      
+      console.log(englishDescription.flavor_text)
+
       setSearchedPokemon('')
     } catch (err) {
       console.log(err)
       setError('no such pokemon')
     }
-    console.log(pokemonData)
+  
   }
 
   return (
@@ -53,7 +72,7 @@ const App = () => {
         </div>
         
         <div className=''>
-          <Textbox pokemon = {pokemonData}/>
+          <Textbox pokemon = {pokemonData} englishDescription={englishDescription}/>
         </div>
         
       {/* Pokemon Information */}
