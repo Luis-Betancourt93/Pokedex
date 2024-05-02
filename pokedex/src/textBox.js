@@ -1,15 +1,29 @@
 import React from 'react';
 
-const Textbox = () => {
+const Textbox = ({pokemon}) => {
+
+  
+  const pokeName = pokemon && pokemon.name ? pokemon.name: '';
+  const upperCaseName = pokeName.charAt(0).toUpperCase() + pokeName.slice(1)
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="relative flex justify-center items-center ">
       <img
         src="images/textBox1.png"
         alt=""
         className=""
       />
-      <div className="absolute top-14 left-auto  text-white text-lg font-bold bg-black bg-opacity-50 p-4">
-        Text overlay content
+      <div className="absolute h-78 w-49 text-white text-lg font-bold bg-black bg-opacity-50 ">
+
+        <div className='flex justify-center underline font-extrabold tracking-widest'> {upperCaseName}</div>
+        <div className='flex '>
+          <div className='w-1/2 bg-red-400  h-44 rounded-lg flex justify-center'>
+            <h1 className=' '>Description</h1> 
+          </div>
+          <div className='w-1/2 bg-green-500 flex justify-center h-44 rounded-lg'>
+           Stats
+          </div>
+        </div>
+
       </div>
     </div>
 

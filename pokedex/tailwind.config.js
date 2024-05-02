@@ -8,7 +8,11 @@ module.exports = {
         '34': '8.5rem',
         '38': '9.5rem',
         '100' : '32rem',
+        '78': '78%'
       
+      },
+      width: {
+        '49': '49rem'
       },
       padding: {
         '8': '8rem',

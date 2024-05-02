@@ -11,6 +11,7 @@ const App = () => {
   const [pokemonData, setPokemonData] = useState(null)
   const [searchedPokemon, setSearchedPokemon] = useState('')
   const [error, setError] = useState(null)
+  
   const fetchPokemon = async (e) => {
     e.preventDefault()
     try {
@@ -23,7 +24,7 @@ const App = () => {
       console.log(err)
       setError('no such pokemon')
     }
-
+    console.log(pokemonData)
   }
 
   return (
@@ -52,7 +53,7 @@ const App = () => {
         </div>
         
         <div className=''>
-          <Textbox></Textbox>
+          <Textbox pokemon = {pokemonData}/>
         </div>
         
       {/* Pokemon Information */}
