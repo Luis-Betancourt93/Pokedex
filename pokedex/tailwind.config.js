@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/*.js",],
   theme: {
     extend: {
+      fontFamily: {
+        pokemon:['Pokemon']
+      }, 
+
       height: {
         '30': '7.5rem',
         '34': '8.5rem',

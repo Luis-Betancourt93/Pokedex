@@ -12,12 +12,12 @@ const Textbox = ({pokemon, englishDescription}) => {
         alt=""
         className=""
       />
-      <div className="absolute h-78 w-49 text-white text-lg font-bold bg-black bg-opacity-50 ">
+      <div className="absolute h-78 w-49 text-white text-lg font-pokemon  bg-black bg-opacity-50 ">
 
-        <div className='flex justify-center underline font-extrabold tracking-widest'> {upperCaseName}</div>
+        <div className='flex justify-center underline  tracking-widest'> {upperCaseName}</div>
         <div className='flex '>
           <div className='w-1/2 bg-red-400  h-44 rounded-lg flex justify-center'>
-            <h1 className=' '>{englishDescription}</h1> 
+            <h1 className='text-base'>{englishDescription}</h1> 
           </div>
           <div className='w-1/2 bg-green-500 flex justify-center h-44 rounded-lg'>
            Stats
