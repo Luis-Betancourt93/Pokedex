@@ -16,11 +16,13 @@ const Textbox = ({pokemon, englishDescription}) => {
 
         <div className='flex justify-center underline  tracking-widest'> {upperCaseName}</div>
         <div className='flex '>
-          <div className='w-1/2 bg-red-400  h-44 rounded-lg flex justify-center'>
-            <h1 className='text-base'>{englishDescription}</h1> 
+          <div className='w-1/2  h-44 rounded-lg flex  flex-col  items-center	'>
+            <h1 className='underline mb-4'>Description</h1>
+            <h2 className='text-base ml-4'>{englishDescription}</h2> 
           </div>
           <div className='w-1/2 bg-green-500 flex justify-center h-44 rounded-lg'>
-           Stats
+           <h1 className='underline'>Stats</h1>
+          
           </div>
         </div>
 
