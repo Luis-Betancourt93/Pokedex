@@ -38,6 +38,11 @@
 }
 
 
+.overflow-auto {
+  overflow: auto; /* This enables scrolling */
+  max-height: 100%; /* Set the maximum height */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

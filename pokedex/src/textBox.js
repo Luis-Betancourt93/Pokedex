@@ -10,7 +10,7 @@ const Textbox = ({pokemon, englishDescription}) => {
   const attack = pokemon && pokemon.stats ? pokemon.stats[1].base_stat : []
   const defense = pokemon && pokemon.stats ? pokemon.stats[2].base_stat : []
   const speed = pokemon && pokemon.stats ? pokemon.stats[3].base_stat : []
-  // const speed = pokemon.stats[3].base_stat
+
 
 
   return (
@@ -22,11 +22,16 @@ const Textbox = ({pokemon, englishDescription}) => {
       />
       <div className="absolute h-78 w-49 text-white text-lg font-pokemon  bg-black bg-opacity-50 ">
 
-        <div className='flex justify-center underline  tracking-widest'> {upperCaseName}</div>
+        {pokemon && (
+          <>
+            <div className='flex justify-center underline  tracking-widest'> {upperCaseName}</div>
         <div className='flex '>
           <div className='w-1/2  h-44 rounded-lg flex  flex-col  items-center	'>
             <h1 className='underline mb-4'>Description</h1>
-            <h2 className='text-base ml-4'>{englishDescription}</h2> 
+            <div className='overflow-auto'>
+            <h2 className='text-base ml-4 h-32'>{englishDescription}</h2> 
+            </div>
+            
           </div>
           <div className=' w-1/2  flex  h-44 rounded-lg flex-col pl-12'>
            <h1 className='underline text-center mb-4'>Stats</h1>
@@ -41,8 +46,13 @@ const Textbox = ({pokemon, englishDescription}) => {
             </div>
           </div>
         </div>
+          </>
+        )}
+        
+      
 
       </div>
+      
     </div>
 
 
