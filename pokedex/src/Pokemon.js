@@ -11,7 +11,7 @@ const Pokemon = ({pokemon}) => {
     <div>
     
      
-      <div>{typesString}</div>
+     
     </div>
     
   )

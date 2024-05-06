@@ -36,7 +36,8 @@ const App = () => {
       }
 
       
-      console.log(englishDescription.flavor_text)
+      console.log(pokemonData)
+      console.log(pokemonData.stats[0].base_stat)
 
       setSearchedPokemon('')
     } catch (err) {
@@ -76,9 +77,7 @@ const App = () => {
         </div>
         
       {/* Pokemon Information */}
-      <div>
-        {error ? <div> {error} </div>: <Pokemon pokemon = {pokemonData} />} 
-      </div>
+      
 
       </div>
 
