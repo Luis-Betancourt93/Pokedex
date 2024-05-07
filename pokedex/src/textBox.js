@@ -25,27 +25,24 @@ const Textbox = ({pokemon, englishDescription}) => {
         {pokemon && (
           <>
             <div className='flex justify-center underline  tracking-widest'> {upperCaseName}</div>
-        <div className='flex '>
-          <div className='w-1/2  h-44 rounded-lg flex  flex-col  items-center	'>
-            <h1 className='underline mb-4'>Description</h1>
-            <div className='overflow-auto'>
-            <h2 className='text-base ml-4 h-32'>{englishDescription}</h2> 
+            <div className='flex '>
+              <div className='w-1/2  h-44 rounded-lg flex  flex-col  items-center	'>
+                <h1 className='underline mb-4'>Description</h1>
+                <div className='overflow-auto'>
+                <h2 className='text-base ml-4 h-32'>{englishDescription}</h2> 
+                </div>
+              </div>
+              <div className=' w-1/2  flex  h-44 rounded-lg flex-col pl-12'>
+                <h1 className='underline text-center mb-4'>Stats</h1>
+                <div className="flex flex-col items-start">
+                  <h3 className='ml-4 text-sm '>Type:<span className='uppercase'> {typesString}</span></h3>
+                  <h3 className='ml-4 text-sm '>Hp:<span className='uppercase'> {hp}</span></h3>
+                  <h3 className='ml-4 text-sm '>Attack:<span className='uppercase'> {attack}</span></h3>
+                  <h3 className='ml-4 text-sm '>Defense:<span className='uppercase'> {defense}</span></h3>
+                  <h3 className='ml-4 text-sm '>Speed:<span className='uppercase'> {speed}</span></h3>
+                </div>
+              </div>
             </div>
-            
-          </div>
-          <div className=' w-1/2  flex  h-44 rounded-lg flex-col pl-12'>
-           <h1 className='underline text-center mb-4'>Stats</h1>
-           <div className="flex flex-col items-start">
-           <h3 className='ml-4 text-sm '>Type:<span className='uppercase'> {typesString}</span></h3>
-           <h3 className='ml-4 text-sm '>Hp:<span className='uppercase'> {hp}</span></h3>
-           <h3 className='ml-4 text-sm '>Attack:<span className='uppercase'> {attack}</span></h3>
-           <h3 className='ml-4 text-sm '>Defense:<span className='uppercase'> {defense}</span></h3>
-           <h3 className='ml-4 text-sm '>Speed:<span className='uppercase'> {speed}</span></h3>
-
-
-            </div>
-          </div>
-        </div>
           </>
         )}
         
