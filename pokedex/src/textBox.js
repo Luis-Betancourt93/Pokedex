@@ -16,7 +16,7 @@ const Textbox = ({pokemon, englishDescription}) => {
   return (
     <div className="relative flex justify-center items-center ">
       <img
-        src="images/textBox1.png"
+        src="images/textBox3.png"
         alt=""
         className=""
       />
