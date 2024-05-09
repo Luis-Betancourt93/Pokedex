@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f08132d.css",
+    "main.js": "/static/js/main.c3f7114c.js",
+    "static/media/background1.png": "/static/media/background1.531218a47b4d2beb999c.png",
+    "static/media/Pokemon.ttf": "/static/media/Pokemon.7b405427a72cc3786ceb.ttf",
+    "index.html": "/index.html",
+    "main.3f08132d.css.map": "/static/css/main.3f08132d.css.map",
+    "main.c3f7114c.js.map": "/static/js/main.c3f7114c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f08132d.css",
+    "static/js/main.c3f7114c.js"
+  ]
+}
