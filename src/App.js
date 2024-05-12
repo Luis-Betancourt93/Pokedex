@@ -71,7 +71,7 @@ const App = () => {
 
   return (
   
-    <div className="h-screen w-screen  bg-[url('/public/images/background1.png')] bg-cover">
+    <div className="h-screen w-screen  bg-[url('/public/images/background2.png')] bg-cover">
 
       <div className=' bg-gray-500 bg-opacity-50 h-full'>
 
