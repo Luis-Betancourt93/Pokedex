@@ -44,15 +44,15 @@ const ImageWithTextOverlay = ({pokemon}) => {
   return (
 
         // Pokedex and Poke Image
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center md:w-screen">
           <img
             src="images/pokedex1.png"
             alt="Image the the pokedex"
-            className=" ml-36  md:ml-52 md:h-100"
+            className=" pl-36 md:p-0 md:ml-40  md:h-100"
            />
           {pokemon && (
-          <div className={`${backgroundColorClass} absolute md:top-60 md:-mt-11 md:ml-7 lg:ml-0 h-24 md:h-30 w-32 md:w-40 text-white text-lg font-bold   mr-7 rounded-lg`}> 
-           <div className='flex justify-center items-center '><img className='md:h-34  auto ml-2 ' src={image}/></div> 
+          <div className={`${backgroundColorClass} absolute md:top-60 md:-mt-11 ml-10 md:-ml-2 lg:-ml-10 h-24 md:h-30  w-32 md:w-40 lg:w-44 text-white text-lg font-bold   mr-7 rounded-lg`}> 
+           <div className='flex justify-center items-center '><img className=' md:h-34  auto ml-2 ' src={image}/></div> 
           </div>
          )}
 

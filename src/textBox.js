@@ -18,9 +18,9 @@ const Textbox = ({pokemon, englishDescription}) => {
       <img
         src="images/textBox3.png"
         alt=""
-        className=""
+        className="sm:p-5"
       />
-      <div className="absolute h-78 w-49 text-white text-lg font-pokemon  bg-black bg-opacity-50 ">
+      <div className="absolute h-78 w-37 md:w-43 lg:w-49 text-white text-lg font-pokemon  bg-black bg-opacity-50 ">
 
         {pokemon && (
           <>

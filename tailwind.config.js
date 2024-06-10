@@ -16,6 +16,10 @@ module.exports = {
       
       },
       width: {
+        '37': '37rem',
+        '49': '49rem',
+        '42': '42rem',
+        '43': '43rem',
         '49': '49rem'
       },
       padding: {
