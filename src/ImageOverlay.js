@@ -48,11 +48,11 @@ const ImageWithTextOverlay = ({pokemon}) => {
           <img
             src="images/pokedex1.png"
             alt="Image the the pokedex"
-            className="h-100 ml-52 "
+            className=" ml-36  md:ml-52 md:h-100"
            />
           {pokemon && (
-          <div className={`${backgroundColorClass} absolute top-60 -mt-11  h-30 w-40 text-white text-lg font-bold   mr-7 rounded-lg`}> 
-           <div className='flex justify-center items-center '><img className='h-34  auto ml-2 ' src={image}/></div> 
+          <div className={`${backgroundColorClass} absolute md:top-60 md:-mt-11 md:ml-7 lg:ml-0 h-24 md:h-30 w-32 md:w-40 text-white text-lg font-bold   mr-7 rounded-lg`}> 
+           <div className='flex justify-center items-center '><img className='md:h-34  auto ml-2 ' src={image}/></div> 
           </div>
          )}
 
